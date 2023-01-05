@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="83.334">
+    <testcase classname="Arabam.com test cases" name="Daica Arama testi" time="25.478">
+        <system-out>
+            <![CDATA[Given Navigate to the website...............................................passed
+And son yirmi dort saat linkine tıkla.......................................passed
+Then Otomobil linkine tıkla.................................................passed
+And Dacia markayı sec.......................................................passed
+Then model  sec.............................................................passed
+And Minimum fiyat belirle "250000"..........................................passed
+Then verify thet the filters are applied....................................passed
+And get the filtered list of cars "250000"..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Arabam.com test cases" name="Daica Arama testi 2" time="35.996">
+        <system-out>
+            <![CDATA[Given Navigate to the website...............................................passed
+And son yirmi dort saat linkine tıkla.......................................passed
+Then Otomobil linkine tıkla.................................................passed
+And Dacia markayı sec.......................................................passed
+Then model  sec.............................................................passed
+And Minimum fiyat belirle "400000"..........................................passed
+Then verify thet the filters are applied....................................passed
+And get the filtered list of cars "400000"..................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Arabam.com test cases" name="Register test" time="21.427">
+        <system-out>
+            <![CDATA[Given Navigate to the website...............................................passed
+And Uye ol linkine tıkla....................................................passed
+Then fill in the register form..............................................passed
+And click the check boxes and hit the registerButton........................passed
+Then verify that confirmation phone number button is visible................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

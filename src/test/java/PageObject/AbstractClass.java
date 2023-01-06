@@ -61,6 +61,11 @@ public abstract class AbstractClass {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,270)", "");
     }
+
+    public void scrollDownToEnd(){
+        Actions actions=new Actions(driver);
+        actions.sendKeys(Keys.END).perform();
+    }
     public void dragAndDrop(WebElement drag,WebElement drop){
         Actions actions=new Actions(driver);
 
@@ -121,6 +126,17 @@ public abstract class AbstractClass {
         WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(30));
         WebElement assertElement1=wait.until(ExpectedConditions.visibilityOf(element));
         Assert.assertTrue(assertElement1.isDisplayed());
+    }
+
+
+    //==================Header====================\\
+
+
+    public void contentCheck(List<WebElement> list,String word){
+
+        List<String> strList=list.stream().map(WebElement::getText).collect(Collectors.toList());
+        strList.forEach(n->Assert.assertTrue(n.contains(word)));
+
     }
 
 }

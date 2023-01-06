@@ -24,6 +24,11 @@ Feature: Arabam.com test cases
         And click the check boxes and hit the registerButton
         Then verify that confirmation phone number button is visible
 
+        Scenario: verify that all elements are under the right header
+          And go to the very buttom of the page
+          Then satilik araba butonuna tikla
+          And Tum alt basliklarin satilik icerdigini dogrula "Satılık"
+
 
 
 

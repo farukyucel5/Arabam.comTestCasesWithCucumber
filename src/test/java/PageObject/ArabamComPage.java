@@ -9,15 +9,13 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.stream.Collectors;
 
-public class PageLocatorClass extends AbstractClass {
+public class ArabamComPage extends AbstractClass {
 
 
     private  WebDriver driver;
 
-    public PageLocatorClass(){
+    public ArabamComPage(){
         driver= Driver.getDriver();
         PageFactory.initElements(driver,this);
 
@@ -130,6 +128,27 @@ public class PageLocatorClass extends AbstractClass {
 
         assertions(getConfirmationBtn);
     }
+
+    //==========header verification===============\\
+
+
+    @FindBy(xpath = "//*[@class='tab-button active']")
+    private static  WebElement header;
+    public void Header(){
+
+        clickFunction(header);
+
+    }
+
+    @FindBy(xpath = "//*[@*='tab-content active']/div")
+    private static List<WebElement> subHeadlines;
+
+    public void subHeader(String word){
+        contentCheck(subHeadlines,word);
+
+
+    }
+
 
 
 

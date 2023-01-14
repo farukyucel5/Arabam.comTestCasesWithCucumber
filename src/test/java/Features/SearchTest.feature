@@ -3,7 +3,7 @@ Feature: Arabam.com test cases
   Background:
     Given Navigate to the website
 
-    Scenario Outline: Daica Arama testi
+     Scenario Outline: Daica Arama testi
       And son yirmi dort saat linkine tıkla
       Then Otomobil linkine tıkla
       And Dacia markayı sec

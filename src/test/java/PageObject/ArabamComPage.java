@@ -35,7 +35,7 @@ public class ArabamComPage extends AbstractClass {
         clickFunction(vehicleType);
     }
 
-    @FindBy(xpath = "(//a[@class='list-item'])[8]")
+    @FindBy(xpath = "//a[@href='otomobil/dacia']")
     private WebElement dacia;
 
     public void setBrand(){

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="122.893">
-    <testcase classname="Arabam.com test cases" name="Daica Arama testi" time="44.671">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="134.639">
+    <testcase classname="Arabam.com test cases" name="Daica Arama testi" time="64.361">
         <system-out>
             <![CDATA[Given Navigate to the website...............................................passed
 And son yirmi dort saat linkine tıkla.......................................passed
@@ -13,7 +13,7 @@ And get the filtered list of cars "250000"..................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Arabam.com test cases" name="Daica Arama testi 2" time="43.116">
+    <testcase classname="Arabam.com test cases" name="Daica Arama testi 2" time="41.962">
         <system-out>
             <![CDATA[Given Navigate to the website...............................................passed
 And son yirmi dort saat linkine tıkla.......................................passed
@@ -26,17 +26,46 @@ And get the filtered list of cars "400000"..................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Arabam.com test cases" name="Register test" time="25.722">
-        <system-out>
+    <testcase classname="Arabam.com test cases" name="Register test" time="16.375">
+        <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: chrome=109.0.5414.74)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: '4.7.1', revision: 'c6795baf1a3'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ed6e9a706b0573ebab4a719e7b12918f, actions {actions=[org.openqa.selenium.interactions.Sequence@11d2dd2d, org.openqa.selenium.interactions.Sequence@cde8c6c]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62798/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ed6e9a706b0573ebab4a719e7b12918f" type="org.openqa.selenium.StaleElementReferenceException">
             <![CDATA[Given Navigate to the website...............................................passed
 And Uye ol linkine tıkla....................................................passed
-Then fill in the register form..............................................passed
-And click the check boxes and hit the registerButton........................passed
-Then verify that confirmation phone number button is visible................passed
+Then fill in the register form..............................................failed
+And click the check boxes and hit the registerButton........................skipped
+Then verify that confirmation phone number button is visible................skipped
+
+StackTrace:
+org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=109.0.5414.74)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed6e9a706b0573ebab4a719e7b12918f, actions {actions=[org.openqa.selenium.interactions.Sequence@11d2dd2d, org.openqa.selenium.interactions.Sequence@cde8c6c]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.74, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62798/devtoo..., se:cdpVersion: 109.0.5414.74, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ed6e9a706b0573ebab4a719e7b12918f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:619)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+	at PageObject.AbstractClass.fillInTheForm(AbstractClass.java:119)
+	at PageObject.ArabamComPage.filling(ArabamComPage.java:101)
+	at Steps.ArabamSteps.fillInTheRegisterForm(ArabamSteps.java:64)
+	at ✽.fill in the register form(file:///C:/Asoftware/Arabam.com/src/test/java/Features/SearchTest.feature:22)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
-    <testcase classname="Arabam.com test cases" name="verify that all elements are under the right header" time="8.881">
+    <testcase classname="Arabam.com test cases" name="verify that all elements are under the right header" time="11.065">
         <system-out>
             <![CDATA[Given Navigate to the website...............................................passed
 And go to the very buttom of the page.......................................passed
